@@ -1,0 +1,13 @@
+<style>
+  .hidden-sidebar {
+    display: none;
+  }
+</style>
+<script>
+  function showSidebar() {
+    var sidebar = document.querySelector('.jimu-widget-sidebar');
+    sidebar.classList.remove('hidden-sidebar');
+  }
+  document.addEventListener('addressSelected', showSidebar);
+</script>
+
